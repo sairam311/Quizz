@@ -21,7 +21,7 @@ const Admin = () => {
   const handleLogout = () => {
     // You can clear any authentication data here (e.g., token, user info)
     // localStorage.removeItem('authToken');
-    navigate('/'); // Redirect to login page
+    navigate('/Quizz'); // Redirect to login page
   };
 
   return (

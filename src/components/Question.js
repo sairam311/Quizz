@@ -41,11 +41,11 @@ function Question({quizzes, index, questionIndex, selectedAns, dispatch, isSubmi
                             </div>
 
                             {isSubmitted && i === correctAns ? 
-                            <img src="assets/images/icon-correct.svg" alt="correct-icon" className="icon-corr"/>  
+                            <img src={`${process.env.PUBLIC_URL}/assets/images/icon-correct.svg`} alt="correct-icon" className="icon-corr"/>  
                             : ""}
 
                             {isSubmitted && i !== correctAns && i === selectedAns ? 
-                            <img src="assets/images/icon-error.svg" alt="wrong-icon" className="icon-wrong"/>  
+                            <img src={`${process.env.PUBLIC_URL}/assets/images/icon-error.svg`} alt="wrong-icon" className="icon-wrong"/>  
                             : ""}
 
                         </button>            
